@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Iconic Smile MX · Dra. Mar MC | Estética Dental en Cuajimalpa, CDMX</title>
+<meta name="description" content="Diseño de sonrisa, blanqueamiento y estética dental en San José de los Cedros, Cuajimalpa. Recupera la confianza de sonreír con resultados naturales.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Iconic Smile MX · Dra. Mar MC">
+<meta property="og:description" content="Estética · Salud · Confianza. Odontología estética en Cuajimalpa, CDMX.">
+
+<!-- Favicon: silueta del diente del logo -->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          ivory:   '#FDFBFA',
+          blush:   '#FBF3F8',
+          petal:   '#F4E3EF',
+          charcoal:'#1A1418',
+          magenta: '#C4267D',
+          rose:    '#E85BA8',
+          lavender:'#B89BD9',
+          gold:    '#C9A24B',
+          wa:      '#25D366'
+        }
+      },
+      fontFamily: {
+        serif: ['Cormorant Garamond', 'serif'],
+        sans:  ['Inter', 'sans-serif'],
+      }
+    }
+  }
+}
+</script>
+
+<style>
+  body{ background:#FDFBFA; color:#1A1418; font-family:'Inter',sans-serif; overflow-x:hidden; }
+  .font-editorial{ font-family:'Cormorant Garamond', serif; }
+  .brand-gradient{ background:linear-gradient(120deg,#C4267D 0%,#E85BA8 45%,#B89BD9 100%); }
+  .brand-text-gradient{ background:linear-gradient(120deg,#C4267D 0%,#E85BA8 55%,#B89BD9 100%); -webkit-background-clip:text; background-clip:text; color:transparent; }
+
+  .reveal{ opacity:0; transform:translateY(28px); transition:all 1s cubic-bezier(.215,.61,.355,1); }
+  .reveal.active{ opacity:1; transform:translateY(0); }
+
+  @keyframes riseIn{ from{opacity:0; transform:translateY(24px);} to{opacity:1; transform:translateY(0);} }
+  .rise{ opacity:0; animation:riseIn .9s cubic-bezier(.215,.61,.355,1) forwards; }
+  .rise-1{ animation-delay:.05s; } .rise-2{ animation-delay:.18s; } .rise-3{ animation-delay:.31s; } .rise-4{ animation-delay:.44s; } .rise-5{ animation-delay:.57s; }
+
+  @keyframes sheen{ 0%{ transform:translateX(-120%);} 60%,100%{ transform:translateX(220%);} }
+  .btn-sheen{ position:relative; overflow:hidden; }
+  .btn-sheen::after{ content:""; position:absolute; top:0; left:0; width:40%; height:100%; background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent); transform:translateX(-120%); animation:sheen 4.5s ease-in-out infinite; }
+
+  .no-scrollbar::-webkit-scrollbar{ display:none; }
+  .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
+
+  @keyframes softpulse{ 0%,100%{ box-shadow:0 8px 24px -6px rgba(37,211,102,.5);} 50%{ box-shadow:0 8px 34px -4px rgba(37,211,102,.85);} }
+  .float-pulse{ animation:softpulse 2.8s ease-in-out infinite; }
+
+  /* CTA WhatsApp inline reutilizable */
+  .cta-wa{ display:inline-flex; align-items:center; gap:.55rem; }
+  .cta-wa svg{ width:1.05em; height:1.05em; }
+
+  @media (prefers-reduced-motion:reduce){
+    *{ animation:none !important; transition:none !important; }
+    .reveal{ opacity:1; transform:none; } .rise{ opacity:1; }
+  }
+</style>
+</head>
+<body class="antialiased selection:bg-brand-magenta selection:text-white">
+
+<!-- ================= HEADER ================= -->
+<header class="fixed top-0 left-0 w-full z-50 bg-brand-ivory/85 backdrop-blur-md border-b border-brand-charcoal/8">
+  <div class="max-w-7xl mx-auto px-4 md:px-10 h-16 md:h-[76px] flex items-center justify-between gap-3">
+    <!-- Logo real, esquina superior izquierda -->
+    <a href="#" class="flex items-center shrink-0">
+      <img src="assets/logo-iconic-trim.png" alt="Iconic Smile MX" class="h-9 md:h-11 w-auto">
+    </a>
+
+    <!-- Ubicación centro -->
+    <a href="https://www.google.com/maps/dir/?api=1&destination=19.3693053,-99.2923551"
+       target="_blank" rel="noopener"
+       class="hidden md:flex items-center gap-1.5 text-[11px] tracking-wide text-brand-charcoal/70 hover:text-brand-magenta transition-colors">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+      Ocote 16, Rosa Torres, Cuajimalpa de Morelos, CDMX
+    </a>
+
+    <!-- Teléfono + Cómo llegar (color distinto a WhatsApp) -->
+    <div class="flex items-center gap-2.5 shrink-0">
+      <a href="tel:+525640040225" class="hidden lg:flex flex-col items-end leading-tight">
+        <span class="text-[9px] uppercase tracking-widest text-brand-charcoal/45">Llámanos</span>
+        <span class="text-sm font-semibold text-brand-charcoal tabular-nums">56 4004 0225</span>
+      </a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=19.3693053,-99.2923551"
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-1.5 bg-[#EA4335] text-white text-[11px] md:text-xs uppercase tracking-widest font-semibold px-3.5 md:px-5 py-2.5 hover:bg-[#c5352a] transition-all shadow-md shadow-red-500/20">
+        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+        Cómo llegar
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="relative pt-24 md:pt-32 pb-16 md:pb-20 overflow-hidden">
+  <div class="absolute top-0 right-0 w-[55%] h-[70%] bg-brand-petal/40 blur-[120px] rounded-full pointer-events-none"></div>
+  <div class="absolute -bottom-20 -left-20 w-[40%] h-[50%] bg-brand-blush blur-[100px] rounded-full pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 md:px-10 grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+    <div class="lg:col-span-7 order-2 lg:order-1">
+      <div class="rise rise-1 inline-flex items-center gap-2 px-3 py-1.5 bg-white border border-brand-petal text-[10px] md:text-xs tracking-wide text-brand-magenta font-medium mb-6">
+        <span class="w-1.5 h-1.5 rounded-full brand-gradient"></span>
+        Estética · Salud · Confianza — Cuajimalpa, CDMX
+      </div>
+
+      <h1 class="rise rise-2 font-editorial text-4xl md:text-5xl lg:text-6xl font-light text-brand-charcoal leading-[1.06] mb-6 max-w-2xl">
+        Tu sonrisa dice más de ti antes de que digas una palabra.
+      </h1>
+
+      <p class="rise rise-3 text-brand-charcoal/70 text-sm md:text-base font-light leading-relaxed mb-8 max-w-xl">
+        En Iconic Smile diseñamos sonrisas que se ven naturales y se sienten tuyas. Blanqueamiento, carillas y diseño de sonrisa con un trato cercano y resultados que te devuelven la seguridad de reír sin pensarlo.
+      </p>
+
+      <div class="rise rise-3 grid grid-cols-2 gap-y-2.5 gap-x-5 mb-8 max-w-lg">
+        <div class="flex items-center gap-2 text-xs md:text-[13px] text-brand-charcoal/75"><span class="text-brand-magenta">✓</span> Diseño de sonrisa natural</div>
+        <div class="flex items-center gap-2 text-xs md:text-[13px] text-brand-charcoal/75"><span class="text-brand-magenta">✓</span> Blanqueamiento profesional</div>
+        <div class="flex items-center gap-2 text-xs md:text-[13px] text-brand-charcoal/75"><span class="text-brand-magenta">✓</span> Atención personalizada</div>
+        <div class="flex items-center gap-2 text-xs md:text-[13px] text-brand-charcoal/75"><span class="text-brand-magenta">✓</span> Enfoque en tu comodidad</div>
+      </div>
+
+      <div class="rise rise-4 flex flex-col sm:flex-row sm:items-center gap-6">
+        <a href="https://wa.me/525640040225?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n"
+           target="_blank" rel="noopener"
+           class="btn-sheen cta-wa brand-gradient text-white px-8 py-4 text-xs uppercase tracking-widest font-semibold hover:opacity-95 transition-all shadow-md shadow-brand-magenta/20">
+          Agendar por WhatsApp
+        </a>
+
+        <!-- Reseña Google — MÁS GRANDE -->
+        <div class="flex items-center gap-4 bg-white border border-brand-petal px-4 py-3 shadow-sm">
+          <img src="assets/alfonso-review.png" alt="Paciente de Iconic Smile" class="w-14 h-14 rounded-full object-cover border-2 border-white shadow">
+          <div class="leading-tight">
+            <div class="flex items-center gap-1.5 mb-0.5">
+              <svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 010-4.2V7.06H2.18a11 11 0 000 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1a11 11 0 00-9.82 6.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
+              <span class="text-[11px] text-brand-charcoal/60 font-medium">Reseña de Google</span>
+            </div>
+            <div class="text-brand-gold text-lg leading-none">★★★★★</div>
+            <p class="text-[11px] text-brand-charcoal/60 mt-1 italic max-w-[190px] leading-snug">"Excelente trato y resultados naturales."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imagen hero (Mar trabajando) — destaca en móvil también -->
+    <div class="lg:col-span-5 order-1 lg:order-2">
+      <div class="rise rise-2 lg:rise-5 relative">
+        <div class="aspect-square w-full bg-brand-petal/50 border border-brand-petal overflow-hidden relative">
+          <img src="assets/hero-mariana.jpg" alt="Dra. Mar MC — Iconic Smile MX"
+               class="w-full h-full object-cover object-top"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-6 text-brand-magenta/60">
+            <svg class="w-10 h-10 mb-3" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5z"/></svg>
+            <span class="text-[11px] tracking-wide font-medium">Foto de la Dra. Mar trabajando<br>(assets/hero-mariana.jpg)</span>
+          </div>
+        </div>
+        <div class="absolute -bottom-5 -left-5 bg-white shadow-lg border border-brand-petal px-5 py-3">
+          <p class="font-editorial text-lg text-brand-charcoal leading-none">Dra. Mar MC</p>
+          <p class="text-[10px] uppercase tracking-widest text-brand-magenta mt-1">Odontología estética</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ANTES / DESPUÉS ================= -->
+<section class="reveal bg-brand-charcoal py-16 md:py-20">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="text-center max-w-xl mx-auto mb-10">
+      <h2 class="font-editorial text-2xl md:text-3xl font-light text-white mb-2">Resultados que se ven cada vez que sonríes</h2>
+      <p class="text-xs md:text-sm text-white/50 font-light">Casos reales tratados en Iconic Smile. Naturalidad primero, sin sobrecorrecciones.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+      <figure class="group relative aspect-[4/3] bg-white/5 border border-white/10 overflow-hidden">
+        <img src="assets/caso-1.jpg" alt="Antes y después — blanqueamiento" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="absolute inset-0 hidden flex-col items-center justify-center text-white/40 text-center px-4"><span class="text-[11px] tracking-wide">Antes / Después<br>Blanqueamiento<br><span class="text-white/25">(assets/caso-1.jpg)</span></span></div>
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-3"><span class="text-[10px] uppercase tracking-widest text-white/80">Blanqueamiento</span></figcaption>
+      </figure>
+      <figure class="group relative aspect-[4/3] bg-white/5 border border-white/10 overflow-hidden">
+        <img src="assets/caso-2.jpg" alt="Antes y después — diseño de sonrisa" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="absolute inset-0 hidden flex-col items-center justify-center text-white/40 text-center px-4"><span class="text-[11px] tracking-wide">Antes / Después<br>Diseño de sonrisa<br><span class="text-white/25">(assets/caso-2.jpg)</span></span></div>
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-3"><span class="text-[10px] uppercase tracking-widest text-white/80">Diseño de sonrisa</span></figcaption>
+      </figure>
+      <figure class="group relative aspect-[4/3] bg-white/5 border border-white/10 overflow-hidden">
+        <img src="assets/caso-3.jpg" alt="Antes y después — prótesis fija" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="absolute inset-0 hidden flex-col items-center justify-center text-white/40 text-center px-4"><span class="text-[11px] tracking-wide">Antes / Después<br>Prótesis fija<br><span class="text-white/25">(assets/caso-3.jpg)</span></span></div>
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-3"><span class="text-[10px] uppercase tracking-widest text-white/80">Prótesis fija</span></figcaption>
+      </figure>
+    </div>
+    <!-- CTA tras antes/después -->
+    <div class="text-center mt-12">
+      <a href="https://wa.me/525640040225?text=Hola%2C%20vi%20sus%20resultados%20y%20quiero%20agendar%20mi%20cita"
+         target="_blank" rel="noopener"
+         class="cta-wa brand-gradient text-white px-8 py-4 text-xs uppercase tracking-widest font-semibold hover:opacity-95 transition-all shadow-md">
+        Quiero mi cita
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TODOS LOS TRATAMIENTOS ================= -->
+<section id="tratamientos" class="reveal py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-[11px] uppercase tracking-[0.2em] text-brand-magenta font-semibold block mb-3">Todo lo que hacemos por tu sonrisa</span>
+      <h2 class="font-editorial text-3xl md:text-4xl font-light text-brand-charcoal">Tratamientos disponibles en Iconic Smile.</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+      <div class="bg-white border border-brand-petal p-5 flex items-center gap-3 hover:border-brand-rose/50 hover:shadow-sm transition-all"><span class="text-brand-magenta text-sm">✦</span><span class="text-sm text-brand-charcoal font-medium">Limpieza dental</span></div>
+      <div class="bg-white border border-brand-petal p-5 flex items-center gap-3 hover:border-brand-rose/50 hover:shadow-sm transition-all"><span class="text-brand-magenta text-sm">✦</span><span class="text-sm text-brand-charcoal font-medium">Blanqueamiento</span></div>
+      <div class="bg-white border border-brand-petal p-5 flex items-center gap-3 hover:border-brand-rose/50 hover:shadow-sm transition-all"><span class="text-brand-magenta text-sm">✦</span><span class="text-sm text-brand-charcoal font-medium">Resinas</span></div>
+      <div class="bg-white border border-brand-petal p-5 flex items-center gap-3 hover:border-brand-rose/50 hover:shadow-sm transition-all"><span class="text-brand-magenta text-sm">✦</span><span class="text-sm text-brand-charcoal font-medium">Rehabilitación bucal</span></div>
+      <div class="bg-white border border-brand-petal p-5 flex items-center gap-3 hover:border-brand-rose/50 hover:shadow-sm transition-all"><span class="text-brand-magenta text-sm">✦</span><span class="text-sm text-brand-charcoal font-medium">Diseño de sonrisa</span></div>
+      <div class="bg-white border border-brand-petal p-5 flex items-center gap-3 hover:border-brand-rose/50 hover:shadow-sm transition-all"><span class="text-brand-magenta text-sm">✦</span><span class="text-sm text-brand-charcoal font-medium">Endodoncia</span></div>
+      <div class="bg-white border border-brand-petal p-5 flex items-center gap-3 hover:border-brand-rose/50 hover:shadow-sm transition-all"><span class="text-brand-magenta text-sm">✦</span><span class="text-sm text-brand-charcoal font-medium">Periodoncia</span></div>
+      <div class="bg-white border border-brand-petal p-5 flex items-center gap-3 hover:border-brand-rose/50 hover:shadow-sm transition-all"><span class="text-brand-magenta text-sm">✦</span><span class="text-sm text-brand-charcoal font-medium">Cirugía</span></div>
+      <div class="bg-white border border-brand-petal p-5 flex items-center gap-3 hover:border-brand-rose/50 hover:shadow-sm transition-all"><span class="text-brand-magenta text-sm">✦</span><span class="text-sm text-brand-charcoal font-medium">Odontopediatría</span></div>
+      <div class="bg-white border border-brand-petal p-5 flex items-center gap-3 hover:border-brand-rose/50 hover:shadow-sm transition-all"><span class="text-brand-magenta text-sm">✦</span><span class="text-sm text-brand-charcoal font-medium">Ortodoncia</span></div>
+      <div class="bg-white border border-brand-petal p-5 flex items-center gap-3 hover:border-brand-rose/50 hover:shadow-sm transition-all"><span class="text-brand-magenta text-sm">✦</span><span class="text-sm text-brand-charcoal font-medium">Prótesis</span></div>
+      <a href="https://wa.me/525640040225?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20tratamiento"
+         target="_blank" rel="noopener"
+         class="brand-gradient text-white p-5 flex items-center justify-center gap-2 text-sm font-semibold uppercase tracking-wide hover:opacity-95 transition-all">
+        Agendar →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ¿TE IDENTIFICAS? ================= -->
+<section id="filosofia" class="reveal bg-brand-blush/60 py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-[11px] uppercase tracking-[0.2em] text-brand-magenta font-semibold block mb-3">¿Te identificas con esto?</span>
+      <h2 class="font-editorial text-3xl md:text-4xl font-light text-brand-charcoal">Las pequeñas cosas que hacemos sin darnos cuenta.</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-8 md:p-10 border border-brand-petal transition-colors hover:border-brand-rose/40"><span class="font-editorial italic text-brand-magenta text-lg block mb-4">01</span><p class="font-editorial text-xl text-brand-charcoal mb-3">Evitas sonreír abierto en las fotos.</p><p class="text-xs text-brand-charcoal/60 font-light leading-relaxed">Buscas el ángulo o cierras la boca, porque sientes que tu sonrisa no te representa.</p></div>
+      <div class="bg-white p-8 md:p-10 border border-brand-petal transition-colors hover:border-brand-rose/40"><span class="font-editorial italic text-brand-magenta text-lg block mb-4">02</span><p class="font-editorial text-xl text-brand-charcoal mb-3">Te tapas la boca al reír.</p><p class="text-xs text-brand-charcoal/60 font-light leading-relaxed">Un gesto tan natural como reír se interrumpe por el reflejo de ocultar los dientes.</p></div>
+      <div class="bg-white p-8 md:p-10 border border-brand-petal transition-colors hover:border-brand-rose/40"><span class="font-editorial italic text-brand-magenta text-lg block mb-4">03</span><p class="font-editorial text-xl text-brand-charcoal mb-3">Llevas meses posponiéndolo.</p><p class="text-xs text-brand-charcoal/60 font-light leading-relaxed">El miedo, la pena o una mala experiencia previa te han frenado de dar el paso.</p></div>
+    </div>
+    <div class="text-center mt-12">
+      <a href="https://wa.me/525640040225?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n"
+         target="_blank" rel="noopener"
+         class="cta-wa brand-gradient text-white px-8 py-4 text-xs uppercase tracking-widest font-semibold hover:opacity-95 transition-all shadow-md">
+        Agendar mi cita
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESO ================= -->
+<section id="proceso" class="reveal py-20 md:py-28">
+  <div class="max-w-3xl mx-auto px-5 md:px-6">
+    <div class="text-center mb-16">
+      <span class="text-[11px] uppercase tracking-[0.2em] text-brand-magenta font-semibold block mb-3">Cómo será tu experiencia</span>
+      <h2 class="font-editorial text-3xl md:text-4xl font-light text-brand-charcoal">Un proceso claro, sin sorpresas.</h2>
+    </div>
+    <div class="relative border-l border-brand-petal ml-3 md:ml-28 space-y-12">
+      <div class="relative pl-8 md:pl-10"><span class="absolute -left-[15px] top-0 w-7 h-7 rounded-full bg-white border border-brand-petal flex items-center justify-center font-editorial text-xs text-brand-magenta font-semibold">1</span><div class="md:absolute md:-left-40 md:top-0 md:w-28 md:text-right"><span class="text-[10px] uppercase tracking-widest text-brand-charcoal/40 font-medium">Primer contacto</span></div><h3 class="font-editorial text-xl text-brand-charcoal mb-1.5">Escríbenos por WhatsApp</h3><p class="text-xs text-brand-charcoal/60 font-light leading-relaxed max-w-lg">Cuéntanos qué te gustaría mejorar. Te respondemos y buscamos el horario que mejor te acomode.</p></div>
+      <div class="relative pl-8 md:pl-10"><span class="absolute -left-[15px] top-0 w-7 h-7 rounded-full bg-white border border-brand-petal flex items-center justify-center font-editorial text-xs text-brand-magenta font-semibold">2</span><div class="md:absolute md:-left-40 md:top-0 md:w-28 md:text-right"><span class="text-[10px] uppercase tracking-widest text-brand-charcoal/40 font-medium">Valoración</span></div><h3 class="font-editorial text-xl text-brand-charcoal mb-1.5">Te escuchamos y revisamos</h3><p class="text-xs text-brand-charcoal/60 font-light leading-relaxed max-w-lg">En una cita sin prisas hablamos de lo que buscas y hacemos una revisión cuidadosa, sin incomodidad.</p></div>
+      <div class="relative pl-8 md:pl-10"><span class="absolute -left-[15px] top-0 w-7 h-7 rounded-full bg-white border border-brand-petal flex items-center justify-center font-editorial text-xs text-brand-magenta font-semibold">3</span><div class="md:absolute md:-left-40 md:top-0 md:w-28 md:text-right"><span class="text-[10px] uppercase tracking-widest text-brand-charcoal/40 font-medium">Tu plan</span></div><h3 class="font-editorial text-xl text-brand-charcoal mb-1.5">Plan y presupuesto claros</h3><p class="text-xs text-brand-charcoal/60 font-light leading-relaxed max-w-lg">Te explicamos cada paso y el costo con total transparencia, para que decidas con confianza.</p></div>
+      <div class="relative pl-8 md:pl-10"><span class="absolute -left-[15px] top-0 w-7 h-7 rounded-full brand-gradient text-white flex items-center justify-center font-editorial text-xs font-semibold">4</span><div class="md:absolute md:-left-40 md:top-0 md:w-28 md:text-right"><span class="text-[10px] uppercase tracking-widest text-brand-magenta font-semibold">Tu nueva sonrisa</span></div><h3 class="font-editorial text-xl brand-text-gradient font-medium mb-1.5">Sonríe sin pensarlo</h3><p class="text-xs text-brand-charcoal/60 font-light leading-relaxed max-w-lg">Sales con una sonrisa sana, natural y que refleja quién eres de verdad.</p></div>
+    </div>
+    <div class="text-center mt-14">
+      <a href="https://wa.me/525640040225?text=Hola%2C%20quiero%20agendar%20mi%20cita"
+         target="_blank" rel="noopener"
+         class="cta-wa brand-gradient text-white px-8 py-4 text-xs uppercase tracking-widest font-semibold hover:opacity-95 transition-all shadow-md">
+        Agendar en WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEÑAS ================= -->
+<section class="reveal bg-brand-blush/60 py-20 md:py-24 border-y border-brand-petal">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="flex items-center justify-center gap-2 mb-2"><span class="text-brand-gold text-lg tracking-wide">★★★★★</span></div>
+    <span class="text-[11px] uppercase tracking-[0.2em] text-brand-magenta font-semibold block text-center mb-12">Lo que dicen nuestros pacientes</span>
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white p-8 border border-brand-petal flex flex-col"><div class="flex items-center justify-between mb-4"><span class="text-brand-gold text-sm">★★★★★</span><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 010-4.2V7.06H2.18a11 11 0 000 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1a11 11 0 00-9.82 6.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg></div><p class="text-xs text-brand-charcoal/75 font-light leading-relaxed italic mb-6 flex-1">"¡Súper recomendada la Dra. Mar! Fui por un diseño de sonrisa y un blanqueamiento, y quedé fascinada. Te explica todo paso a paso y te da una paz increíble. Mis dientes quedaron espectaculares y súper naturales. ¡Mil gracias, Mar!"</p><p class="text-[10px] uppercase tracking-widest text-brand-charcoal font-semibold">Sofía R.</p><p class="text-[9px] text-brand-charcoal/40">Diseño de sonrisa y blanqueamiento</p></div>
+      <div class="bg-white p-8 border border-brand-petal flex flex-col"><div class="flex items-center justify-between mb-4"><span class="text-brand-gold text-sm">★★★★★</span><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 010-4.2V7.06H2.18a11 11 0 000 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1a11 11 0 00-9.82 6.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg></div><p class="text-xs text-brand-charcoal/75 font-light leading-relaxed italic mb-6 flex-1">"Yo le tenía pánico al dentista, pero me recomendaron a Mar y me animé por una muela del juicio que ya no aguantaba. No saben el alivio: cero dolor, me transmitió muchísima confianza y se me quitó el miedo. Literal me cambió la vida."</p><p class="text-[10px] uppercase tracking-widest text-brand-charcoal font-semibold">Alejandro M.</p><p class="text-[9px] text-brand-charcoal/40">Cirugía · muela del juicio</p></div>
+      <div class="bg-white p-8 border border-brand-petal flex flex-col"><div class="flex items-center justify-between mb-4"><span class="text-brand-gold text-sm">★★★★★</span><svg class="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 010-4.2V7.06H2.18a11 11 0 000 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1a11 11 0 00-9.82 6.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg></div><p class="text-xs text-brand-charcoal/75 font-light leading-relaxed italic mb-6 flex-1">"Me encanta venir aquí, la atención es de primer nivel. Llevé a mis hijos a revisión y Mar les tuvo una paciencia increíble. El consultorio está impecable y se nota cañón el amor que le tiene a su profesión. ¡Cinco estrellas!"</p><p class="text-[10px] uppercase tracking-widest text-brand-charcoal font-semibold">Valentina G.</p><p class="text-[9px] text-brand-charcoal/40">Odontopediatría</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="reveal max-w-3xl mx-auto px-5 md:px-6 py-20 md:py-28">
+  <div class="text-center mb-14"><span class="text-[11px] uppercase tracking-[0.2em] text-brand-magenta font-semibold block mb-3">Despeja tus dudas</span><h2 class="font-editorial text-3xl md:text-4xl font-light text-brand-charcoal">Preguntas frecuentes</h2></div>
+  <div class="space-y-3" id="faq">
+    <div class="border-b border-brand-petal pb-3"><button class="faq-btn w-full flex justify-between items-center text-left py-2"><span class="font-editorial text-lg md:text-xl text-brand-charcoal pr-4">¿Qué incluye la primera valoración?</span><span class="faq-ico text-brand-magenta text-sm transition-transform">＋</span></button><div class="faq-body hidden pt-1 pr-6"><p class="text-xs text-brand-charcoal/65 font-light leading-relaxed">Una plática para conocer lo que buscas, una revisión clínica cuidadosa y una propuesta inicial de tratamiento con su presupuesto, explicada con claridad.</p></div></div>
+    <div class="border-b border-brand-petal pb-3"><button class="faq-btn w-full flex justify-between items-center text-left py-2"><span class="font-editorial text-lg md:text-xl text-brand-charcoal pr-4">¿Los tratamientos estéticos dañan mis dientes?</span><span class="faq-ico text-brand-magenta text-sm transition-transform">＋</span></button><div class="faq-body hidden pt-1 pr-6"><p class="text-xs text-brand-charcoal/65 font-light leading-relaxed">Trabajamos con un enfoque conservador: buscamos preservar la mayor cantidad de estructura natural posible, con técnicas modernas y materiales de calidad.</p></div></div>
+    <div class="border-b border-brand-petal pb-3"><button class="faq-btn w-full flex justify-between items-center text-left py-2"><span class="font-editorial text-lg md:text-xl text-brand-charcoal pr-4">¿Dónde están y cómo agendo?</span><span class="faq-ico text-brand-magenta text-sm transition-transform">＋</span></button><div class="faq-body hidden pt-1 pr-6"><p class="text-xs text-brand-charcoal/65 font-light leading-relaxed">Estamos en Ocote 16, Rosa Torres, Cuajimalpa de Morelos, CDMX. La forma más rápida de agendar es por WhatsApp con el botón de esta página.</p></div></div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section id="agenda" class="reveal max-w-5xl mx-auto px-5 md:px-6 pb-20 md:pb-28">
+  <div class="brand-gradient p-8 md:p-16 relative overflow-hidden text-white text-center">
+    <div class="absolute -top-16 -right-16 w-64 h-64 bg-white/10 rounded-full blur-2xl"></div>
+    <div class="relative max-w-2xl mx-auto">
+      <h2 class="font-editorial text-3xl md:text-5xl font-light leading-tight mb-5">Da el primer paso hacia tu nueva sonrisa.</h2>
+      <p class="text-sm text-white/80 font-light leading-relaxed mb-9 max-w-lg mx-auto">Escríbenos por WhatsApp y con gusto resolvemos tus dudas y te agendamos. Sin compromiso.</p>
+      <a href="https://wa.me/525640040225?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n"
+         target="_blank" rel="noopener"
+         class="cta-wa bg-white text-brand-magenta px-9 py-4 text-xs uppercase tracking-widest font-semibold hover:bg-brand-charcoal hover:text-white transition-all shadow-lg">
+        Agendar por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-brand-charcoal text-white/55 text-xs py-14">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="space-y-3">
+      <img src="assets/logo-iconic-trim.png" alt="Iconic Smile MX" class="h-10 w-auto brightness-0 invert opacity-90">
+      <p class="text-[11px] font-light leading-relaxed max-w-xs">Estética · Salud · Confianza. Odontología estética con la Dra. Mar MC.</p>
+    </div>
+    <div class="space-y-2">
+      <span class="text-[10px] uppercase tracking-widest text-white font-semibold block mb-1">Ubicación</span>
+      <p class="font-light leading-relaxed text-[11px]">Ocote 16, Rosa Torres<br>Cuajimalpa de Morelos, CDMX</p>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=19.3693053,-99.2923551" target="_blank" rel="noopener" class="inline-block mt-1 text-[11px] text-brand-rose hover:text-white transition-colors">Cómo llegar →</a>
+    </div>
+    <div class="space-y-2">
+      <span class="text-[10px] uppercase tracking-widest text-white font-semibold block mb-1">Contacto</span>
+      <a href="https://wa.me/525640040225" target="_blank" rel="noopener" class="block hover:text-white transition-colors text-[11px]">WhatsApp: +52 56 4004 0225</a>
+      <a href="tel:+525640040225" class="block hover:text-white transition-colors text-[11px]">Tel: 56 4004 0225</a>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 md:px-10 mt-10 pt-6 border-t border-white/10 text-[10px] text-white/30">© 2026 Iconic Smile MX · Dra. Mar MC. Todos los derechos reservados.</div>
+</footer>
+
+<!-- WhatsApp flotante — logo verde original -->
+<a href="https://wa.me/525640040225?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n"
+   target="_blank" rel="noopener"
+   class="float-pulse fixed bottom-6 right-6 z-40 bg-brand-wa text-white w-14 h-14 flex items-center justify-center rounded-full hover:-translate-y-1 transition-transform"
+   title="Agendar por WhatsApp" aria-label="Agendar por WhatsApp">
+  <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 1.975 14.069.951 11.53.951c-5.438 0-9.863 4.373-9.867 9.801-.001 1.73.475 3.424 1.378 4.919l-.995 3.637 3.799-.944zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  function checkReveal(){ const t = window.innerHeight * 0.86; reveals.forEach(r => { if(r.getBoundingClientRect().top < t) r.classList.add('active'); }); }
+  window.addEventListener('scroll', checkReveal); window.addEventListener('load', checkReveal);
+  document.querySelectorAll('.faq-btn').forEach(btn => { btn.addEventListener('click', () => { const body = btn.parentElement.querySelector('.faq-body'); const ico = btn.querySelector('.faq-ico'); const open = !body.classList.contains('hidden'); if(open){ body.classList.add('hidden'); ico.textContent='＋'; } else { body.classList.remove('hidden'); ico.textContent='－'; } }); });
+</script>
+</body>
+</html>
